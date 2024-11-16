@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 export const Overlay = styled.KeyboardAvoidingView`
   background: rgba(0, 0, 0, 0.6);
@@ -9,7 +9,7 @@ export const Overlay = styled.KeyboardAvoidingView`
 `;
 
 export const ModalBody = styled.View`
-  background: #FFF;
+  background: #fff;
   width: 100%;
   padding: 24px;
   border-radius: 8px;

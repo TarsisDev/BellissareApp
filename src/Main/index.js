@@ -1,23 +1,23 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
-import { Text } from '../components/Text';
+import { Text } from "../components/Text";
 
-import Header from '../components/Header';
-import Tasks from '../components/Tasks';
-import AddButton from '../components/AddButton';
-import DeleteConfirmModal from '../components/DeleteConfirmModal';
-import NewTaskModal from '../components/NewTaskModal';
-import EditTaskModal from '../components/EditTaskModal';
-
-import { tasks } from '../mocks/tasks';
+import Header from "../components/Header";
+import Tasks from "../components/Tasks";
+import AddButton from "../components/AddButton";
+import DeleteConfirmModal from "../components/DeleteConfirmModal";
+import NewTaskModal from "../components/NewTaskModal";
+import EditTaskModal from "../components/EditTaskModal";
+import Background from "../components/Background";
+import { tasks } from "../mocks/tasks";
 
 export default function Main() {
   const [isDeleteModalVisible, setIsDeleteModalVisible] = useState(false);
   const [isNewTaskModalVisible, setIsNewTaskModalVisible] = useState(false);
   const [isEditTaskModalVisible, setIsEditTaskModalVisible] = useState(false);
-  const [taskBeingEdit, setTaskBeingEdit] = useState('');
+  const [taskBeingEdit, setTaskBeingEdit] = useState("");
 
   function handleChangeStatus(task) {
     alert("Alterar Status da Tarefa");
@@ -48,7 +48,7 @@ export default function Main() {
   }
 
   return (
-    <Container>
+    <Background>
       <Header />
 
       <Tasks
@@ -78,7 +78,6 @@ export default function Main() {
         onSave={handleSaveEditTask}
         task={taskBeingEdit}
       />
-
-    </Container>
+    </Background>
   );
 }
