@@ -6,7 +6,7 @@ export const Form = styled.View`
 `;
 
 export const Input = styled.TextInput`
-  border: 1px solid rgba(204, 204, 204, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.9);
   padding: 16px;
   border-radius: 8px;
 `;
