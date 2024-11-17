@@ -6,11 +6,10 @@ export const Form = styled.View`
 `;
 
 export const Input = styled.TextInput`
-  background-color: #f5f5f4;
-  border: 1px solid rgba(204, 204, 204, 0.9);
+  border: 1px solid black;
+  background-color: #fff;
   padding: 16px;
   border-radius: 8px;
-  color: #010000; /* Cor do texto */
 `;
 
 export const PasswordInput = styled(Input)`
