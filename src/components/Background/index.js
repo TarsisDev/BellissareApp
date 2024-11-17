@@ -6,7 +6,7 @@ const Background = ({ children }) => {
     <Container>
       <BackgroundImage
         source={require("../../assets/images/fundoBellissare.png")}
-        imageStyle={{ opacity: 0.8 }}
+        imageStyle={{ opacity: 0.5 }}
       >
         {children}
       </BackgroundImage>
