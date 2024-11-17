@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 export const Container = styled.TouchableOpacity`
   position: absolute;
@@ -7,7 +7,7 @@ export const Container = styled.TouchableOpacity`
 `;
 
 export const Add = styled.View`
-  background-color: #2f2f2f;
+  background-color: #57585a;
   width: 55px;
   height: 55px;
   border-radius: 100px;

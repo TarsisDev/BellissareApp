@@ -1,9 +1,10 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 export const Task = styled.View`
   margin: 24px 20px 0;
   padding: 24px;
-  border-color: #EEEEEE;
+  border-color: #a97b50;
+  background-color: #e3c47b;
   border-width: 1px;
   border-radius: 12px;
   gap: 24px;
@@ -17,7 +18,6 @@ export const TaskFooter = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
 `;
 
 export const TaskStatus = styled.TouchableOpacity`
