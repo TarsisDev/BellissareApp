@@ -11,7 +11,7 @@ export default function LoginForm({ onLogin }) {
     <Form>
       <Input
         placeholder="Email"
-        placeholderTextColor="#8c8c8c" /* Placeholder em um cinza suave */
+        placeholderTextColor="#010000"
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
@@ -20,7 +20,7 @@ export default function LoginForm({ onLogin }) {
 
       <PasswordInput
         placeholder="Senha"
-        placeholderTextColor="#8c8c8c"
+        placeholderTextColor="#010000"
         value={password}
         onChangeText={setPassword}
         secureTextEntry={true}
