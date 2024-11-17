@@ -15,7 +15,7 @@ Este projeto foi criado como parte de um trabalho acadêmico e utiliza o framewo
 
 ```plaintext
 ├── .expo/
-├── assets/                 # Ícones padrão do Expo
+├── assets/                # Ícones padrão do Expo
 ├── node_modules/
 ├── src/
 │   ├── assets/
@@ -50,7 +50,7 @@ Para configurar o ambiente e rodar o projeto, siga os passos abaixo:
 
 2. **Navegue até o diretório do projeto**:
    ```bash
-   cd bellissare-agendamentos
+   cd BellissareApp
    
 3. **Instale as dependências**:
    ```bash
