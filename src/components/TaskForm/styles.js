@@ -14,7 +14,7 @@ export const Input = styled.TextInput`
 */
 export const Input = styled.TextInput`
   border: 1px solid black;
-  background-color: black;
+  background-color: #57585a;
   padding: 16px;
   border-radius: 8px;
 `;
