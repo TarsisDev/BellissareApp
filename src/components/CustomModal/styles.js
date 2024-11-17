@@ -9,7 +9,7 @@ export const Overlay = styled.KeyboardAvoidingView`
 `;
 
 export const ModalBody = styled.View`
-  background: #fff;
+  background: #e3c47b;
   width: 100%;
   padding: 24px;
   border-radius: 8px;

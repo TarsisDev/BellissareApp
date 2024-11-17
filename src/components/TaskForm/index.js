@@ -1,25 +1,26 @@
-import { useState } from 'react';
+//form padrão dos modais de NewTaskModal, EditTaskModal e DeleteTaskModal
+import { useState } from "react";
 
-import { Form, Input } from './styles';
+import { Form, Input } from "./styles";
 
-import { Button } from '../Button';
+import { Button } from "../Button";
 
 export default function TaskForm({ onSave, task, buttonLabel }) {
-  const [title, setTitle] = useState(task?.title ?? '');
-  const [description, setDescription] = useState(task?.description ?? '');
+  const [title, setTitle] = useState(task?.title ?? "");
+  const [description, setDescription] = useState(task?.description ?? "");
 
   return (
     <Form>
       <Input
         placeholder="Título"
-        placeholderTextColor="#666"
+        placeholderTextColor="#010000"
         value={title}
         onChangeText={setTitle}
       />
 
       <Input
         placeholder="Descrição"
-        placeholderTextColor="#666"
+        placeholderTextColor="#010000"
         value={description}
         onChangeText={setDescription}
       />
