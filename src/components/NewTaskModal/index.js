@@ -13,7 +13,7 @@ export default function NewTaskModal({ visible, onClose, onSave }) {
   return (
     <CustomModal visible={visible}>
       <Header>
-        <Text color="#010000" weight="600">
+        <Text color="#f5f5f4" weight="600">
           Adicionar Tarefa
         </Text>
 
