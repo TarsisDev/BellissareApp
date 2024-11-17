@@ -13,14 +13,14 @@ export default function TaskForm({ onSave, task, buttonLabel }) {
     <Form>
       <Input
         placeholder="Título"
-        placeholderTextColor="#fff"
+        placeholderTextColor="#010000"
         value={title}
         onChangeText={setTitle}
       />
 
       <Input
         placeholder="Descrição"
-        placeholderTextColor="#fff"
+        placeholderTextColor="#010000"
         value={description}
         onChangeText={setDescription}
       />
