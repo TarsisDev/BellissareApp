@@ -1,11 +1,23 @@
-//não funciona (Não testado)
 import { useState } from "react";
+import { Alert } from "react-native";
 import { Form, Input, PasswordInput } from "./styles";
 import { Button } from "../Button";
 
 export default function LoginForm({ onLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleLoginPress = async () => {
+    setLoading(true);
+    try {
+      await onLogin({ email, password });
+    } catch (error) {
+      Alert.alert("Erro", error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <Form>
@@ -27,10 +39,10 @@ export default function LoginForm({ onLogin }) {
       />
 
       <Button
-        onPress={() => onLogin({ email, password })}
-        disabled={email.length === 0 || password.length === 0}
+        onPress={handleLoginPress}
+        disabled={loading || !email || !password}
       >
-        Entrar
+        {loading ? "Carregando..." : "Entrar"}
       </Button>
     </Form>
   );
