@@ -8,14 +8,15 @@ import Header from "../components/Header";
 import Tasks from "../components/Tasks";
 import AddButton from "../components/AddButton";
 import DeleteConfirmModal from "../components/DeleteConfirmModal";
-import NewTaskModal from "../components/NewAgendaModal";
+import NewAgendamentoModal from "../components/NewAgendamentoModal";
 import EditTaskModal from "../components/EditTaskModal";
 import Background from "../components/Background";
 import { tasks } from "../mocks/tasks";
 
 export default function Main() {
   const [isDeleteModalVisible, setIsDeleteModalVisible] = useState(false);
-  const [isNewTaskModalVisible, setIsNewTaskModalVisible] = useState(false);
+  const [isNewAgendamentoModalVisible, setIsNewAgendamentoModalVisible] =
+    useState(false);
   const [isEditTaskModalVisible, setIsEditTaskModalVisible] = useState(false);
   const [taskBeingEdit, setTaskBeingEdit] = useState("");
 
@@ -39,7 +40,7 @@ export default function Main() {
 
   function handleCreateTask(task) {
     //Código para cadastrar a tarefa
-    setIsNewTaskModalVisible(false);
+    setIsNewAgendamentoModalVisible(false);
   }
 
   function handleSaveEditTask(task) {
@@ -58,7 +59,7 @@ export default function Main() {
         onDeleteTask={handleConfirmDeleteTask}
       />
 
-      <AddButton onPress={() => setIsNewTaskModalVisible(true)} />
+      <AddButton onPress={() => setIsNewAgendamentoModalVisible(true)} />
 
       <DeleteConfirmModal
         visible={isDeleteModalVisible}
@@ -66,9 +67,9 @@ export default function Main() {
         onConfirm={handleDeleteTask}
       />
 
-      <NewTaskModal
-        visible={isNewTaskModalVisible}
-        onClose={() => setIsNewTaskModalVisible(false)}
+      <NewAgendamentoModal
+        visible={isNewAgendamentoModalVisible}
+        onClose={() => setIsNewAgendamentoModalVisible(false)}
         onSave={handleCreateTask}
       />
 

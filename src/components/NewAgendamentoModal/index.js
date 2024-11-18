@@ -9,7 +9,7 @@ import { Header } from "./styles";
 
 import close from "../../assets/images/close.png";
 
-export default function NewTaskModal({ visible, onClose, onSave }) {
+export default function NewAgendamentoModal({ visible, onClose, onSave }) {
   return (
     <CustomModal visible={visible}>
       <Header>
