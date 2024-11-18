@@ -8,7 +8,7 @@ import Header from "../components/Header";
 import Tasks from "../components/Tasks";
 import AddButton from "../components/AddButton";
 import DeleteConfirmModal from "../components/DeleteConfirmModal";
-import NewTaskModal from "../components/NewTaskModal";
+import NewTaskModal from "../components/NewAgendaModal";
 import EditTaskModal from "../components/EditTaskModal";
 import Background from "../components/Background";
 import { tasks } from "../mocks/tasks";

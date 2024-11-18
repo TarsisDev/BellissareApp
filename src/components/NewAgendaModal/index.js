@@ -14,7 +14,7 @@ export default function NewTaskModal({ visible, onClose, onSave }) {
     <CustomModal visible={visible}>
       <Header>
         <Text color="#010000" weight="600">
-          Adicionar Tarefa
+          Agendar Atendimento
         </Text>
 
         <TouchableOpacity onPress={onClose}>
